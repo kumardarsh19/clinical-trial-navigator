@@ -19,10 +19,10 @@ Protocol PDF → retrieve the schedule of activities (SoA) → extract it into s
 
 ## Stage 1 — Ingest
 Goal: reliable, re-runnable download of protocols + metadata.
-- [ ] Tools check: Python 3.11+, git, VS Code, GitHub account
-- [ ] Create public repo, clone, open in VS Code
-- [ ] venv + `requests` + `requirements.txt`; `.gitignore` covers `.venv/`, `data/raw/`, `.env`
-- [ ] Add `CLAUDE.md` + `PLAN.md`, commit, push
+- [x] Tools check: Python 3.11+, git, VS Code, GitHub account
+- [x] Create public repo, clone, open in VS Code
+- [x] venv + `requests` + `requirements.txt`; `.gitignore` covers `.venv/`, `data/raw/`, `.env`
+- [x] Add `CLAUDE.md` + `PLAN.md`, commit, push
 - [ ] Explore the API by hand in a browser: one study's JSON, find `documentSection`, find a protocol PDF link
 - [ ] `src/ingest.py`: fetch 1 study by NCT ID, print title, download its protocol PDF
 - [ ] Scale to 10 hand-picked NCT IDs; skip files already downloaded
